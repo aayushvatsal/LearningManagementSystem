@@ -1,0 +1,221 @@
+.instructorContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.instructorTitle {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #34495e;
+  font-weight: bold;
+}
+
+/* Search and Sort Styling */
+.searchSortContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 12px;
+  width: 60%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: border 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #3498db;
+}
+
+.sortSelect {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2em;
+  width: 35%;
+  transition: border 0.3s ease;
+}
+
+.sortSelect:focus {
+  border-color: #3498db;
+}
+
+/* Form Styling */
+.contentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: #f4f6f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formInput, .formSelect, .formTextarea, .fileInput {
+  padding: 12px;
+  font-size: 1.2em;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  transition: border 0.3s ease;
+}
+
+.formInput:focus, .formSelect:focus, .formTextarea:focus, .fileInput:focus {
+  border-color: #3498db;
+}
+
+.formTextarea {
+  height: 150px;
+}
+
+.submitButton {
+  background-color: #27ae60;
+  color: white;
+  padding: 14px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.submitButton:hover {
+  background-color: #2ecc71;
+  transform: scale(1.02);
+}
+
+/* Content List Styling */
+.contentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contentCard {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.contentCard h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.contentCard p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #7f8c8d;
+}
+
+.contentCard a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.contentCard:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Delete and Edit Button Styling */
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.editButton, .deleteButton {
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.editButton {
+  background-color: #3498db;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+.deleteButton {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pageButton {
+  background-color: #ecf0f1;
+  color: #333;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pageButton:hover {
+  background-color: #bdc3c7;
+}
+
+.activePage {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contentCard {
+    width: 100%;
+  }
+
+  .contentForm {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .searchSortContainer {
+    flex-direction: column;
+  }
+
+  .searchInput, .sortSelect {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

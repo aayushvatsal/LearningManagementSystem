@@ -1,0 +1,118 @@
+.latestContentContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .latestTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .videoCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .videoCard {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .videoCard:hover {
+    transform: translateY(-10px);
+  }
+  
+  .videoImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .videoTitle {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .videoTime {
+    font-size: 14px;
+    color: grey;
+  }
+  
+  .contentLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .contentLink {
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  .contentLink h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .contentLink p {
+    font-size: 14px;
+    color: grey;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 992px) {
+    .videoCards {
+      justify-content: center;
+    }
+  
+    .videoCard {
+      max-width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .videoCard {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .contentLinks {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contentLink {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .latestTitle {
+      font-size: 20px;
+    }
+  
+    .videoTitle {
+      font-size: 16px;
+    }
+  
+    .contentLink h4 {
+      font-size: 14px;
+    }
+  
+    .contentLink p {
+      font-size: 12px;
+    }
+  }
+  

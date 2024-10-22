@@ -1,0 +1,94 @@
+/* Container for the entire interest section */
+.interestContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Heading style */
+  .interestHeading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #ff6f61; /* Orange color for emphasis */
+    font-weight: bold;
+  }
+  
+  /* Points container and columns */
+  .interestPoints {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .pointsColumn {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pointItem {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .diamond {
+    color: #ff6f61; /* Diamond color */
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  /* Image grid */
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Individual image cards */
+  .imageCard {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .cardImage:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive for tablet */
+  @media (max-width: 992px) {
+    .interestPoints {
+      flex-direction: column;
+      align-items: center;
+    }
+    .imageGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .imageGrid {
+      grid-template-columns: 1fr;
+    }
+    .pointItem {
+      font-size: 1rem;
+    }
+  }
+  

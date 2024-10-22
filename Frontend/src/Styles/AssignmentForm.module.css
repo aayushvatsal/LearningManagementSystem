@@ -1,0 +1,182 @@
+.assignmentFormContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assignmentFormTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.assignmentList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.assignmentItem {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.assignmentItem:hover {
+  background-color: #f1f9ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.selectedAssignment {
+  background-color: #d9f2ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.assignmentTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.assignmentDescription {
+  font-size: 16px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.uploadFilesContainer {
+  text-align: center;
+}
+
+.dragFileArea {
+  border: 2px dashed #7b2cbf;
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.dragFileArea:hover {
+  border-color: #3498db;
+}
+
+.uploadIcon {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 20px;
+  color: #7b2cbf;
+}
+
+.dynamicMessage {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 16px;
+  color: #666666;
+}
+
+.browseFilesText {
+  font-weight: bold;
+  color: #7b2cbf;
+  cursor: pointer;
+}
+
+.defaultFileInput {
+  display: none;
+}
+
+.fileList {
+  margin-top: 20px;
+}
+
+.fileBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f9ff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fileIcon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #3498db;
+}
+
+.fileName {
+  font-weight: 500;
+  color: #333333;
+}
+
+.fileSize {
+  color: #666666;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.uploadButton {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .assignmentFormContainer {
+    padding: 20px;
+  }
+
+  .assignmentFormTitle {
+    font-size: 24px;
+  }
+
+  .assignmentItem {
+    padding: 10px;
+  }
+
+  .assignmentTitle {
+    font-size: 18px;
+  }
+
+  .dragFileArea {
+    padding: 30px;
+  }
+
+  .uploadIcon {
+    font-size: 40px;
+  }
+
+  .dynamicMessage {
+    font-size: 16px;
+  }
+
+  .uploadButton {
+    padding: 10px 20px;
+  }
+}

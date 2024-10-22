@@ -1,0 +1,131 @@
+/* Section Styling */
+.testimonialsWrapper {
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* .testimonialsContainer {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Title Styling */
+.testimonialsTitle {
+  font-size: 2.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+/* Card Container Styling */
+.testimonialsGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Individual Card Styling */
+.testimonialCard {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.testimonialCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.profileImageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  border-radius: 50%;
+  border: 4px solid #0070f3;
+  object-fit: cover;
+  width: 130px;
+  height: 130px;
+  transition: border-color 0.3s;
+}
+
+.profileImage:hover {
+  border-color: #005bb5;
+}
+
+/* Text Styling */
+.testimonialName {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonialRole {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.testimonialFeedback {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .testimonialCard {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialsTitle {
+    font-size: 2.25rem;
+  }
+
+  .testimonialCard {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonialsTitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .testimonialCard {
+    width: 100%;
+  }
+}

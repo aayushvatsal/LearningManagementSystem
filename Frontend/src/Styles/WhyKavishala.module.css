@@ -1,0 +1,152 @@
+/* Section Styling */
+.AchievementsSection {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.AchievementsContainer {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title Styling */
+.AchievementsTitle {
+  font-size: 2.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 60px;
+}
+
+/* Card Container Styling */
+.CardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Individual Card Styling */
+.Card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.CardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Date Styling */
+.Date {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* Card Title Styling */
+.CardTitle {
+  font-size: 1.85rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* Card Description Styling */
+.CardDescription {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+  color: #7f8c8d;
+}
+
+/* Button Styling */
+.ReadButton {
+  display: inline-block;
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.ReadButton:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .Card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .AchievementsTitle {
+    font-size: 2.25rem;
+  }
+
+  .Card {
+    width: calc(50% - 20px);
+  }
+
+  .CardTitle {
+    font-size: 1.65rem;
+  }
+
+  .ReadButton {
+    padding: 10px 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .AchievementsTitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .Card {
+    width: 100%;
+  }
+
+  .CardTitle {
+    font-size: 1.5rem;
+  }
+
+  .ReadButton {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+  }
+}

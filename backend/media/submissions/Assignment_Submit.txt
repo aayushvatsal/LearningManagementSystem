@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+
+    <h1>Welcome to My First Webpage!</h1>
+
+    <h2>About Me</h2>
+
+    <p>Hello! My name is [Your Name]. This is my first HTML webpage. I am learning how to use basic HTML tags.</p>
+
+    <a href="https://www.example.com">Click here to visit my favorite website!</a>
+
+    <br>
+
+    <img src="https://www.example.com/my-image.jpg" alt="A beautiful scenery">
+
+</body>
+</html>

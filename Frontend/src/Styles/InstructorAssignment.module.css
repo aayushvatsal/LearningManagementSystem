@@ -1,0 +1,289 @@
+.assignmentContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.assignmentContainer h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.assignmentContainer h2 {
+  font-size: 2rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid #6c757d;
+  padding-bottom: 0.5rem;
+}
+
+.inputField, .textareaField {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 0.5rem 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background-color: #fff;
+}
+
+.inputField:focus, .textareaField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.textareaField {
+  height: 100px;
+  resize: vertical;
+}
+
+.createAssignmentButton, .submitGradeButton, .editButton, .deleteButton, .viewSubmissionButton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.createAssignmentButton:hover, .submitGradeButton:hover, .editButton:hover, .deleteButton:hover, .viewSubmissionButton:hover {
+  background-color: #0056b3;
+}
+
+.createAssignmentButton {
+  background-color: #28a745;
+}
+
+.createAssignmentButton:hover {
+  background-color: #218838;
+}
+
+.submitGradeButton {
+  background-color: #ffc107;
+}
+
+.submitGradeButton:hover {
+  background-color: #e0a800;
+}
+
+.editButton {
+  background-color: #17a2b8;
+}
+
+.editButton:hover {
+  background-color: #138496;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.viewSubmissionButton {
+  background-color: #6f42c1;
+}
+
+.viewSubmissionButton:hover {
+  background-color: #5936a3;
+}
+
+.assignmentSection h2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.assignmentItem {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.assignmentItem:hover {
+  transform: translateY(-3px);
+}
+
+.assignmentItem h3 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+.assignmentItem button {
+  margin-right: 1rem;
+}
+
+.assignmentItem p {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+/* Table Styles */
+.submissionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.submissionTable th, .submissionTable td {
+  padding: 12px 15px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.submissionTable th {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.submissionTable td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.submissionTable td a:hover {
+  color: #0056b3;
+}
+
+.submissionSection h2 {
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #6c757d;
+  padding-bottom: 0.5rem;
+}
+
+.submissionSection input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submissionSection input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submission Details */
+.submissionDetailsSection {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.submissionDetailsSection h2 {
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #6c757d;
+  padding-bottom: 0.5rem;
+}
+
+.submissionDetailsSection p {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.submissionDetailsSection a {
+  display: inline-block;
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.submissionDetailsSection a:hover {
+  color: #0056b3;
+}
+
+.submissionDetailsSection strong {
+  color: #343a40;
+}
+
+.submitGradeButton {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.submitGradeButton:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .submissionDetailsSection {
+    padding: 1rem;
+  }
+
+  .submissionDetailsSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .submissionDetailsSection p {
+    font-size: 1rem;
+  }
+
+  .submitGradeButton {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .submissionDetailsSection h2 {
+    font-size: 1.2rem;
+  }
+
+  .submissionDetailsSection p {
+    font-size: 0.9rem;
+  }
+
+  .submitGradeButton {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}

@@ -1,0 +1,280 @@
+/* Main Header Styling */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Default Light Mode */
+  position: relative;
+  z-index: 1000;
+}
+
+/* SearchBar Styling */
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.SearchBar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%; /* Takes up remaining space */
+  background-color: transparent;
+}
+
+.SearchBar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.SearchBar button i {
+  font-size: 16px;
+  color: #5e2f89;
+}
+
+/* Icons Section Styling */
+.Icons {
+  display: flex;
+  align-items: center;
+}
+
+.Icons > * {
+  margin-right: 15px;
+  color: #5e2f89;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s ease;
+}
+
+.Icons > *:hover {
+  transform: scale(1.1);
+  color: #b78bfa;
+}
+
+/* Profile Section */
+.ProfileSection {
+  position: relative;
+}
+
+.ProfilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.ProfilePic:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Card Styling */
+.ProfileCard {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.ProfileCardInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProfileCardPic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProfileCardPic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ProfileCard h3 {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+
+.ProfileCard p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Update Button */
+.ProfileCard button {
+  padding: 8px 20px;
+  background-color: #5e2f89;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(94, 47, 137, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProfileCard button:hover {
+  background-color: #b78bfa;
+  box-shadow: 0 6px 15px rgba(94, 47, 137, 0.4);
+}
+
+/* Icons for Edit/Delete */
+.ProfileIcons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  transition: all 0.3s ease;
+}
+
+.ProfileIcons .EditIcon,
+.ProfileIcons .DeleteIcon {
+  color: #5e2f89;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.ProfileIcons .EditIcon:hover {
+  color: #b78bfa;
+}
+
+.ProfileIcons .DeleteIcon:hover {
+  color: #ff5757;
+}
+
+/* Dark and Light Mode Styling */
+.Dark {
+  background-color: #1c1c1c;
+  color: #eaeaea;
+}
+
+.Light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.DarkMode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+.Dark .SearchBar {
+  background-color: #333;
+}
+
+.Light .SearchBar {
+  background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .Header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .SearchBar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .Icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .ProfileCard {
+    width: 100%;
+    right: 0;
+    top: 60px;
+  }
+
+  .EditProfileCard {
+    width: 90%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .SearchBar {
+    display: none; /* Hide search bar on small screens */
+  }
+
+  .Icons {
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  .ProfileCard {
+    width: 100%;
+    right: 0;
+    top: 60px;
+  }
+
+  .EditProfileCard {
+    width: 90%;
+  }
+}
+
+/* Smaller Mobile Devices */
+@media (max-width: 480px) {
+  .Header {
+    padding: 10px;
+  }
+
+  .Icons > * {
+    margin-right: 5px;
+  }
+
+  .ProfileCard {
+    width: 100%;
+    right: 0;
+    top: 60px;
+  }
+
+  .EditProfileCard {
+    width: 90%;
+  }
+}

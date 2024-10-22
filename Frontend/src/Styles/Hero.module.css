@@ -1,0 +1,271 @@
+/* Hero Section */
+.HeroSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Container for Hero Content */
+  .HeroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  /* Content Wrapper */
+  .HeroContentWrapper {
+    flex: 1;
+  }
+  
+  /* Hero Content */
+  .HeroContent {
+    max-width: 600px;
+  }
+  
+  /* Hero Title */
+  .HeroTitle {
+    font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 3px 3px 8px rgba(21, 21, 21, 0.086);
+    margin-bottom: 1rem;
+    animation: slideIn 1.5s ease-out;
+    text-align: left;
+  }
+  
+  /* Hero Text */
+  .HeroContent .textLg {
+    font-size: 1.125rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .HeroContent .mdTextXl {
+    font-size: 1.25rem;
+  }
+  
+  .HeroContent .textGray300 {
+    color: #333;
+  }
+  
+  /* Hero Button */
+  .HeroButton {
+    background: #f97316;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Hover Effect for Button */
+  .HeroButton:hover {
+    background-color: #ea580c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hero Image Wrapper */
+  .HeroImageWrapper {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    animation: float 3s ease-in-out infinite;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for Image */
+  .HeroImageWrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Hero Image */
+  .HeroImage {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide-in Animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Media Queries */
+  
+  /* For screens between 310px and 550px */
+  @media (max-width: 550px) {
+    .HeroSection {
+      padding: 30px;
+      min-height: auto;
+    }
+  
+    .HeroContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .HeroTitle {
+      font-size: 1.85rem;
+      /* padding: 20px; */
+      margin-top: 100px;
+    }
+  
+    .HeroButton {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  
+    .HeroImageWrapper {
+      margin-top: 30px;
+      max-width: 300px;
+    }
+  }
+  
+  /* For screens between 551px and 750px */
+  @media (min-width: 550px) and (max-width: 750px) {
+    .HeroSection {
+      padding: 25px;
+    }
+  
+    .HeroContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .HeroTitle {
+      font-size: 2rem;
+      /* padding: 20px; */
+      margin-top: 90px;
+    }
+  
+    .HeroButton {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+    }
+  
+    .HeroImageWrapper {
+      margin-top: 30px;
+      max-width: 350px;
+    }
+  }
+  
+  /* For screens between 751px and 950px */
+  @media (min-width: 751px) and (max-width: 950px) {
+    .HeroSection {
+      padding: 20px;
+      min-height: 70vh;
+    }
+  
+    .HeroTitle {
+      font-size: 2.5rem;
+      margin-top: 70px;
+    }
+  
+    .HeroButton {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+    }
+  
+    .HeroImageWrapper {
+      margin-top: 40px;
+      max-width: 450px;
+    }
+  }
+  
+  /* For screens between 951px and 1200px */
+  @media (min-width: 951px) and (max-width: 1200px) {
+    .HeroSection {
+      padding: 30px;
+      min-height: 60vh;
+    }
+  
+    .HeroTitle {
+      font-size: 3rem;
+      margin-top: 65px;
+    }
+  
+    .HeroButton {
+      padding: 15px 35px;
+      font-size: 1.3rem;
+    }
+  
+    .HeroImageWrapper {
+      margin-top: 50px;
+      max-width: 500px;
+    }
+  }
+  
+  /* For screens larger than 1200px */
+  @media (min-width: 1200px) {
+    .HeroSection {
+      padding: 40px;
+      min-height: 100vh;
+    }
+  
+    .HeroTitle {
+      font-size: 3.5rem;
+    }
+  
+    .HeroButton {
+      padding: 15px 40px;
+      font-size: 1.4rem;
+    }
+  
+    .HeroImageWrapper {
+      margin-top: 60px;
+      max-width: 600px;
+    }
+  }
+  

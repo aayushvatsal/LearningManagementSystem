@@ -1,0 +1,84 @@
+.featuresSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  margin-top: 40px;
+}
+
+/* .featuresSection .featuresContainer {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px; 
+} */
+
+.featuresSection .heading {
+  text-align: center;
+  font-size: 2.75rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.featureCard {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.featuresSection .icon {
+  width: 120px; /* Increased width */
+  height: 120px; /* Increased height */
+  margin: 0 auto 20px auto; /* Centered horizontally with auto margins */
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.featuresSection .title {
+  font-size: 1.75rem;
+  color: #0070f3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.featuresSection .description {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .featuresGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,229 @@
+/* Global Container */
+.platformActivityContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* General Section Styles */
+.activityListSection,
+.recentLogsSection,
+.systemHealthSection,
+.settingsSection,
+.activityStatsSection {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Section Headers */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Hover Effect for Sections */
+.activityListSection:hover,
+.recentLogsSection:hover,
+.systemHealthSection:hover,
+.settingsSection:hover,
+.activityStatsSection:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Table Styling */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.activityTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.activityTable th, .activityTable td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.activityTable th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.activityTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.activityTable td {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Buttons */
+.actionButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 5px; /* Space between buttons */
+}
+
+.viewButton {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.clearButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.actionButton:hover {
+  opacity: 0.9;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust chart container size */
+.chartContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 30px auto; /* Center the charts */
+}
+
+/* Health Metrics */
+.healthMetrics {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.healthMetrics p {
+  font-size: 1.25rem;
+  color: #007bff;
+  font-weight: 500;
+  margin: 0;
+  flex-basis: 30%;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.healthMetrics p:last-child {
+  border-right: none;
+}
+
+/* Settings Section */
+.settingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.settingItem:last-child {
+  border-bottom: none;
+}
+
+.settingItem label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.settingItem input {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .activityTable th, .activityTable td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .actionButton {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .chartContainer {
+    max-width: 100%;
+  }
+
+  .healthMetrics {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .healthMetrics p {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .healthMetrics p:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .actionButton {
+    font-size: 0.85rem;
+    padding: 7px 11px;
+  }
+
+  .chartContainer {
+    max-width: 100%;
+  }
+
+  .healthMetrics {
+    gap: 20px;
+  }
+}
+
+/* Desktop Devices */
+@media (min-width: 769px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .actionButton {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .chartContainer {
+    max-width: 600px;
+  }
+
+  .healthMetrics {
+    gap: 25px;
+  }
+}

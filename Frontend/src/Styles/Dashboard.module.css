@@ -1,0 +1,121 @@
+.MainDivOfDashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f5f7; /* Light grey background */
+  color: #333; /* Dark grey text color */
+  font-family: Arial, sans-serif; /* Clean font */
+}
+
+.MainDivOfDashboard .Container{
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Adjust based on header height */
+}
+
+.HeaderNavbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff; /* White background for header */
+  z-index: 1000; /* Ensure header is on top */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd; /* Light border for separation */
+}
+
+
+
+.SideNavbar {
+  background-color: #fff; /* White background for sidebar */
+  width: 250px;
+  height: calc(100vh - 70px); /* Full height minus header */
+  position: fixed;
+  top: 70px; /* Place the sidebar below the header */
+  left: 0;
+  border-right: 1px solid #ddd; /* Light border for sidebar separation */
+  overflow-y: auto; /* Scroll if content exceeds viewport height */
+}
+
+.ContentSection {
+  margin-left: 250px; /* Account for the fixed sidebar */
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #fff; /* White background for main content */
+  border-radius: 8px; /* Rounded corners for content section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for elevation effect */
+  overflow: auto; /* Scroll if content exceeds container height */
+}
+
+/* Sidebar link styles */
+.SideNavbar a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333; /* Dark grey text color */
+  font-weight: bold;
+}
+
+.SideNavbar a:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  border-left: 4px solid #007bff; /* Blue left border on hover */
+  color: #007bff; /* Blue text color on hover */
+}
+
+.SideNavbar .active {
+  background-color: #007bff; /* Blue background for active link */
+  color: #fff; /* White text color for active link */
+}
+
+.ContentSection h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ContentSection p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .SideNavbar {
+    width: 200px;
+  }
+  .ContentSection {
+    margin-left: 200px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column;
+  }
+  .SideNavbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .ContentSection {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContentSection h1 {
+    font-size: 1.5rem;
+  }
+  .ContentSection p {
+    font-size: 0.875rem;
+  }
+  .SideNavbar a {
+    padding: 0.75rem;
+  }
+}

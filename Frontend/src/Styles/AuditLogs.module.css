@@ -1,0 +1,241 @@
+/* Global container */
+.auditLogsContainer {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Section Titles */
+  .sectionTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Overview Section */
+  .overviewSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .statItem {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .statLabel {
+    display: block;
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  .statValue {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  /* Date Range Picker */
+  .dateRangeSection {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dateRangeContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dateInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-right: 10px;
+  }
+  
+  .filterButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filterButton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Log Filters */
+  .filtersSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filtersContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filterItem {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .filterLabel {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .filterSelect, .filterInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  /* Logs List Section */
+  .logsListSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logsListContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logItem {
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logItem:hover {
+    background-color: #f0f4f8;
+  }
+  
+  .logTimestamp, .logMessage, .logLevel {
+    display: block;
+  }
+  
+  .logTimestamp {
+    font-size: 0.9rem;
+    color: #95a5a6;
+  }
+  
+  .logMessage {
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  .logLevel {
+    font-size: 0.9rem;
+    color: #3498db;
+  }
+  
+  /* Log Details Section */
+  .logDetailsSection {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailsContainer {
+    line-height: 1.6;
+    color: #2c3e50;
+  }
+  
+  /* Export Logs Section */
+  .exportSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exportContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .exportButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #27ae60;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .exportButton:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Log History Section */
+  .historySection {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .historyContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .historyItem {
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+  }
+  
+  .historyDate {
+    font-size: 0.9rem;
+    color: #95a5a6;
+  }
+  
+  .historyAction {
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  

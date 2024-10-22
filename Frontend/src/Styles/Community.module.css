@@ -1,0 +1,132 @@
+.communityContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.communityTitle {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.testimonialsContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.testimonialCard {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.testimonialImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.testimonialText {
+  text-align: left;
+}
+
+.testimonialQuote {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+.testimonialTitle {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .testimonialsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonialCard {
+    padding: 20px 30px;
+  }
+
+  .testimonialImage {
+    width: 65px;
+    height: 65px;
+  }
+
+  .testimonialQuote {
+    font-size: 1.1rem;
+  }
+
+  .communityTitle {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .testimonialsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonialCard {
+    padding: 25px 35px;
+  }
+
+  .testimonialImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonialQuote {
+    font-size: 1.15rem;
+  }
+
+  .communityTitle {
+    font-size: 2.75rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .communityTitle {
+    font-size: 1.5rem;
+  }
+
+  .testimonialCard {
+    padding: 15px;
+  }
+
+  .testimonialImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonialQuote {
+    font-size: 0.9rem;
+  }
+}

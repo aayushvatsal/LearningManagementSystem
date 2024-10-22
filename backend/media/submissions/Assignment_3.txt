@@ -1,0 +1,68 @@
+Simple Interest Formula:
+SI
+=
+𝑃
+×
+𝑅
+×
+𝑇
+100
+SI= 
+100
+P×R×T
+​
+ 
+Where:
+
+𝑃
+=
+5000
+P=5000 (Principal amount)
+𝑅
+=
+5
+%
+R=5% (Annual interest rate)
+𝑇
+=
+3
+T=3 years (Time)
+Step-by-Step Solution:
+SI
+=
+5000
+×
+5
+×
+3
+100
+SI= 
+100
+5000×5×3
+​
+ 
+Now, calculate the multiplication in the numerator:
+
+5000
+×
+5
+×
+3
+=
+75000
+5000×5×3=75000
+Now, divide by 100:
+
+SI
+=
+75000
+100
+=
+750
+SI= 
+100
+75000
+​
+ =750
+Final Answer:
+The simple interest for a principal amount of $5000, an interest rate of 5%, and a time period of 3 years is $750.

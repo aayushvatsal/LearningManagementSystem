@@ -1,0 +1,230 @@
+/* Base Styles */
+.discussionContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.questionForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.questionInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.questionInput:focus {
+  border-color: #007bff;
+}
+
+.submitButton {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.questionsList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.noQuestions, .noReplies {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.questionItem {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.userIcon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.questionText {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  flex: 1;
+}
+
+.questionActions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.likeButton, .replyButton, .editButton, .deleteButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.likeButton:hover, .replyButton:hover, .editButton:hover, .deleteButton:hover {
+  color: #0056b3;
+}
+
+.editButton, .deleteButton {
+  color: #dc3545;
+}
+
+.repliesList {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.replyItem {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.replyText {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+/* Media Queries */
+
+/* Small Mobile (up to 360px) */
+@media (max-width: 360px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .questionForm {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .questionInput {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .questionText {
+    font-size: 16px;
+  }
+
+  .questionActions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .replyText {
+    font-size: 14px;
+  }
+}
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .questionInput {
+    font-size: 15px;
+  }
+
+  .submitButton {
+    font-size: 15px;
+  }
+
+  .questionText {
+    font-size: 17px;
+  }
+
+  .replyText {
+    font-size: 15px;
+  }
+}
+
+/* Tablet (up to 768px) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .questionForm {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .questionInput {
+    font-size: 16px;
+  }
+
+  .submitButton {
+    font-size: 16px;
+  }
+
+  .questionText {
+    font-size: 18px;
+  }
+
+  .replyText {
+    font-size: 16px;
+  }
+}

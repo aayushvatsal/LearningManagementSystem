@@ -1,0 +1,120 @@
+/* General Container */
+.libraryContainer {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 10px;
+}
+
+/* Hero Section */
+.heroSection {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 50px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.libraryTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.libraryDescription {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* Grid Layout */
+.contentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Content Card */
+.contentCard {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+}
+
+.contentCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contentTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contentBody {
+  margin-top: 15px;
+}
+
+.contentImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contentAudio, .contentVideo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contentPDF {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #6a11cb;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contentPDF:hover {
+  background-color: #2575fc;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .libraryTitle {
+    font-size: 2.5rem;
+  }
+
+  .libraryDescription {
+    font-size: 1rem;
+  }
+
+  .contentTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .libraryContainer {
+    padding: 10px;
+  }
+
+  .contentsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contentTitle {
+    font-size: 1.2rem;
+  }
+}

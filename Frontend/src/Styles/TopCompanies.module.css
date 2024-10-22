@@ -1,0 +1,71 @@
+.CompanyContainer {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #f7f7f7; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.CompanyContainer .Title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: Gilroy;
+}
+
+.CompanyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.CompanyCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.CompanyCard:hover {
+  transform: scale(1.05);
+}
+
+.CompanyLogo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .Title {
+    font-size: 20px;
+  }
+
+  .CompanyCard {
+    padding: 8px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .Title {
+    font-size: 18px;
+  }
+
+  .CompanyCard {
+    padding: 6px;
+  }
+
+  .CompanyLogo {
+    width: 80%;
+  }
+}

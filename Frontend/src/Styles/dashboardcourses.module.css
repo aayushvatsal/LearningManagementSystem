@@ -1,0 +1,134 @@
+/* General styles for the container */
+.courseDashboard {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+/* Grid layout for the course cards */
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* No courses enrolled message */
+.courseGrid p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ff6f61;
+}
+
+/* Individual course card */
+.courseCard {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.courseCard:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Icon styles for course card */
+.courseIcon {
+  font-size: 45px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Course name styles */
+.courseName {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Course description styles */
+.courseDescription {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Instructor name */
+.courseInstructor {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+
+/* Mobile devices (portrait) */
+@media (max-width: 480px) {
+  .courseGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .courseCard {
+    padding: 15px;
+  }
+
+  .courseIcon {
+    font-size: 35px;
+  }
+
+  .courseName {
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .courseGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .courseCard {
+    padding: 20px;
+  }
+
+  .courseIcon {
+    font-size: 40px;
+  }
+
+  .courseName {
+    font-size: 17px;
+  }
+}
+
+/* Desktops and larger devices */
+@media (min-width: 769px) {
+  .courseGrid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .courseCard {
+    padding: 30px;
+  }
+
+  .courseIcon {
+    font-size: 50px;
+  }
+
+  .courseName {
+    font-size: 18px;
+  }
+}

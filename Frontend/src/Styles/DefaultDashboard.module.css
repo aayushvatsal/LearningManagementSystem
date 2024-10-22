@@ -1,0 +1,184 @@
+/* Dashboard Container */
+.DashboardContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Arial, sans-serif';
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar (for side navbar) */
+.Sidebar {
+  flex: 0 0 250px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Content Wrapper */
+.ContentWrapper {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Header Section */
+.HeaderSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #97A6A7;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.HeaderTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.SearchInput {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  outline: none;
+}
+
+.IconGroup {
+  display: flex;
+  gap: 20px;
+}
+
+.NotificationIcon, .MessageIcon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.NotificationIcon:hover, .MessageIcon:hover {
+  color: #00aaff;
+  transform: scale(1.1);
+}
+
+/* Main Heading */
+.MainHeading {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Overview Section */
+.OverviewSection {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.OverviewCard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CardTitle {
+  color: #004d99;
+  font-size: 1.2em;
+}
+
+/* Widgets Section */
+.WidgetsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.WidgetCard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WidgetIcon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Recent Activities and Notifications */
+.RecentActivitiesSection, .NotificationsSection {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.ActivitiesList, .NotificationsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .HeaderSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .IconGroup {
+    margin-top: 10px;
+  }
+
+  .SearchInput {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .MainHeading {
+    font-size: 1.8em;
+  }
+
+  .OverviewSection {
+    flex-direction: column;
+  }
+
+  .WidgetsSection {
+    grid-template-columns: 1fr;
+  }
+
+  .HeaderSection {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .HeaderTitle {
+    font-size: 1.2em;
+  }
+
+  .MainHeading {
+    font-size: 1.5em;
+  }
+}

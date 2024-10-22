@@ -1,0 +1,369 @@
+/* General Styles */
+.signUpSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.signUpGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    margin: auto;
+}
+
+.signUpFormCard {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.logoWrapper {
+    margin-bottom: 20px;
+}
+
+.logoImage {
+    width: 160px;
+    height: 140px;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.inputField {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+}
+
+.inputField:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
+}
+
+.passwordToggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.eyeIcon {
+    font-size: 20px;
+    color: #00b4d8;
+}
+
+.errorText {
+    color: #ff4757;
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.submitButton {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00b4d8;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.submitButton:hover {
+    background-color: #0077b6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 119, 182, 0.3);
+}
+
+/* Image Section */
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/Images/SignUpform.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.alreadyMemberText {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.alreadyMemberText a {
+    color: #00b4d8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alreadyMemberText a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styling */
+.selectField {
+    padding: 14px;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    width: 100%;
+    appearance: none;
+    background-image: url('data:image/svg+xml;base64,<SVG_ICON>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.selectField:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
+}
+
+/* OTP Verification Section */
+.otpSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.otpBox {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+}
+
+.otpBox h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.otpBox p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.otpInputWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Specific Styles for OTP 6-box Input */
+.otpInput {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.otpInput:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.2);
+}
+
+.otpVerifyButton {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.otpVerifyButton:hover {
+    background-color: #0077b6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 119, 182, 0.3);
+}
+
+/* Responsive Styles */
+
+/* Large Desktop and up */
+@media (max-width: 1440px) {
+    .signUpGrid {
+        max-width: 1000px;
+        gap: 50px;
+    }
+
+    .signUpFormCard {
+        padding: 45px;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+    .signUpGrid {
+        width: 95%;
+        height: auto;
+        gap: 40px;
+    }
+
+    .signUpFormCard {
+        padding: 40px;
+    }
+}
+
+/* Small Desktop and Tablets */
+@media (max-width: 768px) {
+    .signUpGrid {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 30px;
+    }
+
+    .imageSection {
+        display: none;
+    }
+
+    .signUpFormCard {
+        padding: 30px;
+        max-height: 95vh;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .submitButton {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/* Large Mobile and Small Tablets */
+@media (max-width: 576px) {
+    .signUpGrid {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .signUpFormCard {
+        padding: 25px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .inputField {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .submitButton {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+    .logoImage {
+        width: 80px;
+        height: 70px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+    .signUpGrid {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .signUpFormCard {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .inputField {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .submitButton {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .logoImage {
+        width: 60px;
+        height: 50px;
+    }
+}

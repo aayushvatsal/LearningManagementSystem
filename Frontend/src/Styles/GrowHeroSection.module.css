@@ -1,0 +1,216 @@
+/* Wrapper for the entire section */
+.growHeroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0; /* Removed extra padding */
+  min-height: 100vh; /* Ensure full height coverage */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Main content container */
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Text section (left side) */
+.textSection {
+  flex: 1;
+  padding-right: 40px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0; /* Removed margin */
+}
+
+.highlight {
+  color: #009f32;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.applyButton {
+  background: linear-gradient(90deg, #009f32 0%, #017726 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.applyButton:hover {
+  background-color: #e65b00;
+}
+
+/* Image section (right side) */
+.imageSection {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Stats that overlay on the image */
+.stats {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  margin-left: -105px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statBox {
+  background-color: #f7f4ee;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statValue {
+  font-size: 1.8rem;
+  color: #ff6f0f;
+  font-weight: 600;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Media Queries for responsiveness */
+
+/* Up to 1200px */
+@media all and (max-width: 1200px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textSection {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .imageSection {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .statValue {
+    font-size: 1.6rem;
+  }
+
+  .stats {
+    margin-left: 0;
+    margin-top: 10px;
+    align-items: center;
+  }
+}
+
+/* For devices between 751px and 950px */
+@media (min-width: 751px) and (max-width: 950px) {
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .textSection {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .stats {
+    margin-left: 0;
+    margin-top: 5px;
+    align-items: center;
+  }
+}
+
+/* For devices between 551px and 750px */
+@media (min-width: 551px) and (max-width: 750px) {
+  .contentWrapper {
+    margin-top: 0; /* Removed extra margin */
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .statValue {
+    font-size: 1.4rem;
+  }
+
+  .stats {
+    margin-left: 0;
+    margin-top: 5px;
+    align-items: center;
+  }
+}
+
+/* For devices between 311px and 550px */
+@media (min-width: 311px) and (max-width: 550px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .statValue {
+    font-size: 1.2rem;
+  }
+
+  .statBox {
+    padding: 10px;
+  }
+
+  .stats {
+    margin-left: 0;
+    margin-top: 5px;
+    align-items: center;
+  }
+}

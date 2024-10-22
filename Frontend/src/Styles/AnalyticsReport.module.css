@@ -1,0 +1,205 @@
+/* Global container */
+.analyticsContainer {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Overview Section */
+.overviewSection {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.metricsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.metricBox {
+  background-color: #007bff;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metricBox h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.metricBox p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.metricBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* User Details Section */
+.userDetailsSection {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.userDetailsSection input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 15px;
+}
+
+.userDetailsSection button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.userDetailsSection button:hover {
+  background-color: #0056b3;
+}
+
+/* Revenue Breakdown Section */
+.revenueBreakdownSection {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.revenueList li {
+  padding: 15px;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* System Alerts Section */
+.systemAlertsSection {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.alertList li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.alertIcon {
+  background-color: #dc3545;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+/* Add User Section */
+.addUserSection {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.addUserSection input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.addUserSection input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Manage Users Section */
+.manageUsersSection {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.manageUsersSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.manageUsersSection li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.manageUsersSection input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+.manageUsersSection button {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manageUsersSection button:hover {
+  background-color: #218838;
+}
+
+.manageUsersSection button:last-child {
+  background-color: #dc3545;
+}
+
+.manageUsersSection button:last-child:hover {
+  background-color: #c82333;
+}

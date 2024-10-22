@@ -1,0 +1,177 @@
+/* StudentInteraction.module.css */
+.interactionContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f6f9;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pageTitle {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .messagesSection,
+  .forumSection,
+  .assignmentsSection,
+  .quizSection,
+  .notificationsSection {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messageList,
+  .discussionList,
+  .assignmentList,
+  .quizList,
+  .notificationList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .messageItem,
+  .discussionItem,
+  .assignmentItem,
+  .quizItem,
+  .notificationItem {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .messageItem h3,
+  .discussionItem h3,
+  .assignmentItem h3,
+  .quizItem h3,
+  .notificationItem h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .messageItem p,
+  .discussionItem p,
+  .assignmentItem p,
+  .quizItem p,
+  .notificationItem p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .timestamp {
+    display: block;
+    font-size: 0.875rem;
+    color: #95a5a6;
+    margin-top: 0.5rem;
+  }
+  
+  .replyButton,
+  .viewButton,
+  .reviewButton,
+  .takeQuizButton,
+  .reviewResultsButton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .replyButton {
+    background-color: #3498db;
+  }
+  
+  .replyButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .viewButton {
+    background-color: #27ae60;
+  }
+  
+  .viewButton:hover {
+    background-color: #1e8449;
+  }
+  
+  .reviewButton {
+    background-color: #f39c12;
+  }
+  
+  .reviewButton:hover {
+    background-color: #e67e22;
+  }
+  
+  .takeQuizButton {
+    background-color: #e74c3c;
+  }
+  
+  .takeQuizButton:hover {
+    background-color: #c0392b;
+  }
+  
+  .reviewResultsButton {
+    background-color: #8e44ad;
+  }
+  
+  .reviewResultsButton:hover {
+    background-color: #732d91;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .interactionContainer {
+      padding: 1.5rem;
+    }
+  
+    .pageTitle {
+      font-size: 2rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.75rem;
+    }
+  
+    .messageItem,
+    .discussionItem,
+    .assignmentItem,
+    .quizItem,
+    .notificationItem {
+      min-width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pageTitle {
+      font-size: 1.75rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.5rem;
+    }
+  }
+  

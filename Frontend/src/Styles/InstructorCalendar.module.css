@@ -1,0 +1,211 @@
+.calendarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f9fc; /* Lighter background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for modern look */
+}
+
+.pageTitle {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.calendarSection {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Softer box shadow */
+}
+
+.calendarWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.reactCalendar {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reactCalendar__tile {
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reactCalendar__tile:hover {
+  background-color: #3498db;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.reactCalendar__tile--active {
+  background-color: #2980b9;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.eventsSection,
+.scheduleSection,
+.remindersSection,
+.actionSection {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Softer box shadow */
+}
+
+.eventsList,
+.remindersList {
+  list-style: none;
+  padding: 0;
+}
+
+.eventItem,
+.reminderItem {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.eventItem:hover,
+.reminderItem:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Modern hover shadow */
+  transform: scale(1.02); /* Slight scaling effect */
+}
+
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  border: 1px solid #dee2e6;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.scheduleTable th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+.addClassForm,
+.addReminderForm {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.addClassForm select,
+.addReminderForm input {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  width: auto;
+  min-width: 150px;
+}
+
+.addClassForm button,
+.addReminderForm button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addClassForm button:hover,
+.addReminderForm button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.editIcon,
+.deleteIcon {
+  cursor: pointer;
+  margin: 0 5px;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.editIcon:hover {
+  color: #3498db;
+  transform: scale(1.1);
+}
+
+.deleteIcon:hover {
+  color: #e74c3c;
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .calendarContainer {
+    padding: 1.5rem;
+  }
+
+  .pageTitle {
+    font-size: 2.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .addClassForm,
+  .addReminderForm {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addClassForm select,
+  .addReminderForm input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+}

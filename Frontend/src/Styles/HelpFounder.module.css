@@ -1,0 +1,124 @@
+.helpFounderWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.helpFounderTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.titleHighlight {
+  color: #009f32;
+}
+
+.helpFounderGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.helpFounderCard {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.helpFounderCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.bulletList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bulletList li {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.bulletList li:before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background-color: #009f32;
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  border-radius: 4px;
+}
+
+.linkHighlight {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.linkHighlight:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .helpFounderGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .helpFounderTitle {
+    font-size: 2rem;
+  }
+
+  .helpFounderCard h3 {
+    font-size: 1.4rem;
+  }
+
+  .helpFounderWrapper {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .helpFounderGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .helpFounderTitle {
+    font-size: 1.8rem;
+  }
+
+  .helpFounderCard h3 {
+    font-size: 1.3rem;
+  }
+
+  .helpFounderWrapper {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .helpFounderTitle {
+    font-size: 1.5rem;
+  }
+
+  .helpFounderCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .helpFounderCard {
+    padding: 1rem;
+  }
+
+  .bulletList li:before {
+    left: -15px;
+  }
+}

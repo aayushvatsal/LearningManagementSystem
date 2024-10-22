@@ -1,0 +1,136 @@
+/* Global container */
+.notificationsContainer {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Section Titles */
+  .sectionTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Setting Item */
+  .settingItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Select Box */
+  .select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  
+  /* Button Styles */
+  .editButton, .viewButton, .bulkButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .editButton:hover, .viewButton:hover, .bulkButton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Notification Channels */
+  .notificationChannels {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* User Preferences */
+  .userPreferences {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* System Alerts */
+  .systemAlerts {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Notification Templates */
+  .notificationTemplates {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .templateItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Scheduled Notifications */
+  .scheduledNotifications {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bulk Notifications */
+  .bulkNotifications {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Notification Logs */
+  .notificationLogs {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

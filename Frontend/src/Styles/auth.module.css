@@ -1,0 +1,303 @@
+/* Base styles */
+.authSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.authGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+}
+
+.authFormCard {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.authFormCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.secondaryCard {
+    display: flex;
+    background: url('/Images/Loginimg.png') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire container */
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-position: center; /* Center the image */
+    z-index: -1; /* Place the image behind other content */
+    position: relative; /* Ensure the background remains in place */
+}
+
+
+.logoWrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.authHeading {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputContainer {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.textInput {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.textInput:focus {
+    border-color: #0070f3;
+    box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+}
+
+.passwordToggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.eyeIcon {
+    font-size: 20px;
+    color: #0070f3;
+}
+
+.errorText {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.forgotPasswordWrapper {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forgotPasswordText {
+    font-size: 13px;
+    color: #0070f3;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.forgotPasswordText:hover {
+    color: #005bb5;
+}
+
+.submitButton {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0070f3;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.submitButton:hover {
+    background-color: #005bb5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.switchAuthWrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switchAuthText {
+    font-size: 14px;
+    color: #333;
+}
+
+.switchAuthLink {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.switchAuthLink:hover {
+    color: #005bb5;
+    text-decoration: underline;
+}
+
+/* Success Message Styles */
+.successText {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hide the success message after a few seconds */
+.successText.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Loader Styles */
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #0070f3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaderText {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .authGrid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+    }
+
+    .secondaryCard {
+        display: flex;
+        background: url('/Images/Loginimg.png') no-repeat center center;
+        background-size: cover;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        background-position: right center;
+    }
+
+    .authHeading {
+        font-size: 28px;
+    }
+
+    .textInput {
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .forgotPasswordText,
+    .recaptchaLabel,
+    .switchAuthText {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .authGrid {
+        max-width: 1200px;
+    }
+
+    .authFormCard {
+        padding: 40px;
+    }
+
+    .authHeading {
+        font-size: 30px;
+    }
+
+    .textInput {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .eyeIcon {
+        font-size: 22px;
+    }
+
+    .forgotPasswordText,
+    .recaptchaLabel,
+    .switchAuthText {
+        font-size: 15px;
+    }
+
+    .submitButton {
+        padding: 18px;
+        font-size: 18px;
+    }
+}

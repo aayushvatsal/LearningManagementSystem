@@ -1,0 +1,160 @@
+/* components/PricingPlans.module.css */
+.pricingSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+    /* padding: 4rem 2rem; */
+    background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+  }
+  
+ .pricingSection .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+ .pricingSection .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+ .pricingSection .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* Increased space between cards */
+    justify-content: center; /* Center align cards */
+  }
+  
+  .pricingSection .cardContainer .card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .pricingSection .cardContainer .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricingSection .cardContainer .cardHeader {
+    margin-bottom: 1.5rem;
+  }
+  
+  .planTitle {
+    font-size: 1.75rem;
+    color: #00796b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .planPrice {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .featureList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+  }
+  
+  .featureItem {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .iconCheck {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    stroke: #00796b;
+  }
+  
+  .actionButton {
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .actionButton:hover {
+    background: #004d40;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .planPrice {
+      font-size: 1.75rem;
+    }
+  
+    .actionButton {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .cardContainer {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem; /* Adjust space between cards */
+    }
+  
+    .featureList {
+      font-size: 0.875rem;
+    }
+  
+    .featureItem {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 1.75rem;
+    }
+  
+    .card {
+      padding: 1.5rem;
+    }
+  
+    .planPrice {
+      font-size: 1.5rem;
+    }
+  
+    .actionButton {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+  
+    .featureList {
+      font-size: 0.75rem;
+    }
+  
+    .featureItem {
+      font-size: 0.75rem;
+    }
+  }
+  

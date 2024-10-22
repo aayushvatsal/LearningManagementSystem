@@ -1,0 +1,155 @@
+/* Sidebar general styles */
+.Sidebar {
+  width: 250px;
+  background-color: #1c1c1c; /* Darker, more elegant background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it is above other content */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow for better depth */
+}
+
+.SidebarContent {
+  padding: 20px;
+}
+
+/* Close button */
+.CloseIcon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  color: #fff; /* White color for the icon */
+  font-size: 24px; /* Adjusted size of the close icon */
+  z-index: 1010;
+  background-color: #ff4d4d; /* Red background color for the circle */
+  border-radius: 50%; /* Circle shape */
+  height: 40px; /* Height of the circle */
+  width: 40px; /* Width of the circle */
+  line-height: 40px; /* Center icon vertically within the circle */
+  text-align: center; /* Center icon horizontally within the circle */
+  padding: 0; /* Remove default padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for close button */
+.CloseIcon:hover {
+  background-color: #e60000; /* Darker red on hover */
+  color: #fff; /* White color for the icon on hover */
+}
+
+
+/* Mobile toggle button */
+.MobileToggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+  background-color: #007bff; /* Blue background for the button */
+  color: white;
+  padding: 10px;
+  border-radius: 50%; /* Rounded button for a cleaner look */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for pop effect */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for mobile toggle */
+.MobileToggle:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Sidebar menu item styles */
+.AnchorTag {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #2e2e2e; /* Subtle color difference for menu items */
+  color: #ddd; /* Light color for text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover and active state for menu items */
+.AnchorTag:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
+
+.Active {
+  background-color: #007bff; /* Active background */
+  color: white; /* Active text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow for active items */
+}
+
+/* Icon styling */
+.IconOfDas {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #ddd; /* Icon color */
+}
+
+/* Active icon color */
+.Active .IconOfDas {
+  color: white;
+}
+
+/* Menu text styling */
+.DashBoardOfh3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ddd; /* Same light color as icons */
+}
+
+/* Close button for mobile */
+.CloseIcon:hover {
+  color: #fff; /* White color on hover for close button */
+}
+
+/* Show sidebar and close button on mobile */
+@media (max-width: 768px) {
+  .MobileToggle {
+    display: block;
+  }
+
+  .CloseIcon {
+    display: block;
+  }
+
+  .Sidebar {
+    transform: translateX(-100%);
+  }
+
+  .Show {
+    transform: translateX(0);
+  }
+
+  .Sidebar {
+    width: 200px; /* Slightly smaller for mobile screens */
+  }
+
+  .AnchorTag {
+    padding: 12px; /* More compact padding on mobile */
+  }
+
+  .DashBoardOfh3 {
+    font-size: 14px; /* Smaller text on mobile */
+  }
+
+  /* Adjust toggle button for better mobile appearance */
+  .MobileToggle {
+    top: 15px;
+    left: 15px;
+  }
+}

@@ -1,0 +1,145 @@
+/* InstructorMessage.module.css */
+.messageContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pageTitle {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    font-weight: 600;
+  }
+  
+  .messageOverviewSection,
+  .messageListSection,
+  .messageActionsSection {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messageStats {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .messageStatItem {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messageList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .messageItem {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .messageItem:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  
+  .messageDate {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #7f8c8d;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .composeButton,
+  .archiveButton {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .composeButton {
+    background-color: #3498db;
+  }
+  
+  .composeButton:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+  }
+  
+  .archiveButton {
+    background-color: #e74c3c;
+  }
+  
+  .archiveButton:hover {
+    background-color: #c0392b;
+    transform: scale(1.02);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .messageContainer {
+      padding: 1.5rem;
+    }
+  
+    .pageTitle {
+      font-size: 2rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.75rem;
+    }
+  
+    .messageStats {
+      flex-direction: column;
+    }
+  
+    .messageStatItem {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pageTitle {
+      font-size: 1.75rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -1,0 +1,398 @@
+/* Base Styles */
+.chatAppContainer {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.chatSidebar {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chatSidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.chatSearchContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chatSearchIcon {
+  font-size: 20px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.chatSearchInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaeaea;
+}
+
+.chatList {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatListItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.chatListItem:hover {
+  background-color: #eee;
+}
+
+.chatProfileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chatUserName {
+  font-size: 16px;
+  margin: 0;
+}
+
+.chatUserTime {
+  font-size: 12px;
+  color: #888;
+}
+
+.chatWindow {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chatUserInfo {
+  display: flex;
+  align-items: center;
+}
+
+.chatUserInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chatUserName {
+  font-size: 18px;
+  margin: 0;
+}
+
+.chatUserStatus {
+  font-size: 12px;
+  color: #888;
+}
+
+.chatHeaderIcons {
+  display: flex;
+  align-items: center;
+}
+
+.chatIcon {
+  font-size: 24px;
+  color: #888;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.chatMessages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chatMessageSent {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.chatMessageReceived {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.chatMessageText {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.chatMessageSent .chatMessageText {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.chatMessageReceived .chatMessageText {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.chatMessageTime {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.chatInputContainer {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.chatInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+
+.chatSendButton {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatSendButton:hover {
+  background-color: #3a7ac2;
+}
+
+/* Media Queries */
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .chatAppContainer {
+    flex-direction: column;
+  }
+
+  .chatSidebar {
+    width: 100%;
+    padding: 10px;
+    display: none; /* Hide sidebar on small screens */
+  }
+
+  .chatWindow {
+    width: 100%;
+  }
+
+  .chatHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chatUserInfo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chatUserName {
+    font-size: 16px;
+  }
+
+  .chatUserStatus {
+    font-size: 10px;
+  }
+
+  .chatMessages {
+    padding: 15px;
+  }
+
+  .chatMessageText {
+    font-size: 14px;
+  }
+
+  .chatInputContainer {
+    padding: 10px;
+  }
+
+  .chatInput {
+    padding: 8px;
+  }
+
+  .chatSendButton {
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .chatAppContainer {
+    flex-direction: column;
+  }
+
+  .chatSidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .chatWindow {
+    width: 100%;
+  }
+
+  .chatHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chatUserInfo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .chatUserName {
+    font-size: 17px;
+  }
+
+  .chatUserStatus {
+    font-size: 11px;
+  }
+
+  .chatMessages {
+    padding: 18px;
+  }
+
+  .chatMessageText {
+    font-size: 15px;
+  }
+
+  .chatInputContainer {
+    padding: 12px;
+  }
+
+  .chatInput {
+    padding: 9px;
+  }
+
+  .chatSendButton {
+    padding: 9px 18px;
+  }
+}
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .chatSidebar {
+    width: 25%;
+    padding: 15px;
+  }
+
+  .chatWindow {
+    width: 75%;
+  }
+
+  .chatHeader {
+    padding: 20px;
+  }
+
+  .chatUserInfo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .chatUserName {
+    font-size: 18px;
+  }
+
+  .chatUserStatus {
+    font-size: 12px;
+  }
+
+  .chatMessages {
+    padding: 20px;
+  }
+
+  .chatMessageText {
+    font-size: 16px;
+  }
+
+  .chatInputContainer {
+    padding: 15px;
+  }
+
+  .chatInput {
+    padding: 10px;
+  }
+
+  .chatSendButton {
+    padding: 10px 20px;
+  }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .chatSidebar {
+    width: 30%;
+    padding: 20px;
+  }
+
+  .chatWindow {
+    width: 70%;
+  }
+
+  .chatHeader {
+    padding: 15px;
+  }
+
+  .chatUserInfo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .chatUserName {
+    font-size: 18px;
+  }
+
+  .chatUserStatus {
+    font-size: 12px;
+  }
+
+  .chatMessages {
+    padding: 20px;
+  }
+
+  .chatMessageText {
+    font-size: 16px;
+  }
+
+  .chatInputContainer {
+    padding: 15px;
+  }
+
+  .chatInput {
+    padding: 10px;
+  }
+
+  .chatSendButton {
+    padding: 10px 20px;
+  }
+}

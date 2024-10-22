@@ -1,0 +1,214 @@
+/* components/BlogOrResources.module.css */
+
+.resourcesSection {
+    background: radial-gradient(circle at top left, #f8f9fa, #e9ecef);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+  
+.sectionTitle {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #212529;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+  
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0070f3;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+  
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    justify-content: center;
+}
+  
+.resourceCard {
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    border: 1px solid transparent;
+    transform: perspective(1000px) rotateX(0) rotateY(0);
+}
+  
+.resourceCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #0070f3, #005bb5);
+}
+  
+.resourceCard:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(2deg) translateY(-12px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    border-color: #0070f3;
+}
+  
+.cardContent {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background: linear-gradient(white, #f8f9fa);
+    position: relative;
+    z-index: 1;
+}
+  
+.cardTitle {
+    font-size: 1.85rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+  
+.cardDescription {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+  
+.cardButton {
+    text-decoration: none;
+    color: #0070f3;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: 2px solid #0070f3;
+    border-radius: 25px;
+    padding: 0.75rem 1.75rem;
+    text-align: center;
+    background: rgba(0, 112, 243, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.cardButton:hover {
+    background-color: #0070f3;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .sectionTitle {
+        font-size: 2.5rem;
+    }
+}
+  
+@media (max-width: 992px) {
+    .cardGrid {
+        gap: 2rem;
+    }
+  
+    .resourceCard {
+        border-radius: 12px;
+    }
+  
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
+  
+    .cardButton {
+        font-size: 1.1rem;
+        padding: 0.65rem 1.5rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .sectionTitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+  
+    .cardGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+  
+    .cardContent {
+        padding: 2rem;
+    }
+  
+    .cardTitle {
+        font-size: 1.6rem;
+    }
+  
+    .cardDescription {
+        font-size: 1rem;
+    }
+  
+    .cardButton {
+        font-size: 1rem;
+        padding: 0.6rem 1.4rem;
+    }
+}
+  
+@media (max-width: 576px) {
+    .sectionTitle {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+  
+    .cardGrid {
+        gap: 1rem;
+    }
+  
+    .cardButton {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+        border-radius: 20px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .cardButton {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+        border-radius: 18px;
+    }
+}
+  
+@media (max-width: 360px) {
+    .cardButton {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.9rem;
+        border-radius: 16px;
+    }
+}
